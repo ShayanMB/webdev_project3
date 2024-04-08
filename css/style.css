@@ -1,0 +1,218 @@
+/* UNIVERSAL STYLING FOR ALL OF THE PAGES */
+body {
+  font-family: 'Montserrat', Arial, sans-serif; /* Arial backup font */
+  line-height: 1.5em;
+  color: #333;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+#header {
+  background-color: #303030;
+  color: #fff;
+  padding: 1.25em;
+}
+
+#header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+#header ul li {
+  list-style: none;
+  margin-right: 1.25em;
+}
+
+#header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header h1 {
+  font-family: 'Lucida Console', cursive;
+  margin: 0;
+}
+
+#content-wrapper {
+  margin-top: 1.25em;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 1.25em;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 1.25em;
+}
+
+ul li::before {
+  list-style: none;
+  margin-right: 0.625em;
+}
+
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1em;
+}
+
+ul.custom-list {
+  list-style: none;
+  padding-left: 1.25em;
+}
+
+ul.custom-list li {
+  list-style: none;
+  background-color: #f1f1f1;
+  padding: 0.625em;
+  margin: 1.25em 0;
+  border-radius: 0.313em;
+  text-align: left;
+}
+
+/* INDEX PAGE STYLING BASED ON THE SECTIONS */
+#index-school img{
+  width: calc(100% + 1.25em);
+  height: 18.75em;
+  object-fit: cover;
+  padding: 1.25em;
+  margin-left: -1.25em;
+}
+
+/* styling for the h2's to be bold and underlined */
+#index-school h2 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#index-aboutme h2 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#index-aboutme img {
+  border: 0.125em solid #FFD700;
+  border-radius: 2.5em;
+}
+
+#index-first-column { /* added float */
+  float: center;
+  width: 100%;
+}
+
+#index-second-column { /* added float */
+  float: center;
+  width: 100%;
+}
+
+
+/* MUSIC PAGE STYLING BASED ON THE SECTIONS */
+
+#music-section h2 {
+  padding: 1.25em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#music-section .image-wrapper img {
+  border-radius: 0.625em;
+}
+
+#music-video {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 0.625em;
+}
+
+#music-video h2 {
+  padding: 1.25em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#music-video p {
+  padding: 1.25em;
+}
+
+#music-video iframe {
+  border-radius: 0.625em;
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+#music-left-column {
+  float: left;
+  width: 50%;
+}
+
+#music-right-column {
+  float: right;
+  width: 50%;
+}
+
+/* RESUME PAGE STYLING BASED ON THE SECTIONS */
+
+#resume-education li {
+  word-wrap: break-word;
+}
+
+#resume-skills {
+  border-radius: 0.625em;
+  margin-bottom: 1.25em;
+}
+
+#resume-skills ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%; /* Using relative units */
+  margin: auto;
+}
+
+#resume-skills h3 {
+  padding: 0.625em;
+  font-weight: bold;
+}
+
+#resume-skills ul li {
+  list-style: none; 
+  padding: 0.625em;
+  margin: 0.313em;
+  border-radius: 0.313em;
+  word-wrap: break-word;
+  max-width: 9.375em;
+}
+
+#resume-left-column {
+  float: left;
+  width: 50%;
+}
+
+#resume-right-column {
+  float: right;
+  width: 50%;
+}
+
+/* for smaller screens looking at the horizontal list */
+@media (min-width: 40em) { /* min-width used instead of max with */
+  #resume-skills ul li {
+    list-style: none;
+  }
+}
+
+#resume-experience h2 {
+  padding: 0.1em;
+}
