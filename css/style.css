@@ -39,7 +39,6 @@ body {
   margin-top: 1.25em;
 }
 
-
 ul {
   list-style: none;
   margin: 0;
@@ -65,35 +64,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1em;
 }
 
-ul.custom-list {
-  list-style: none;
-  padding-left: 1.25em;
-}
-
-ul.custom-list li {
-  list-style: none;
-  background-color: #f1f1f1;
-  padding: 0.625em;
-  margin: 1.25em 0;
-  border-radius: 0.313em;
-  text-align: left;
-}
-
 /* INDEX PAGE STYLING BASED ON THE SECTIONS */
-#index-school img{
-  width: calc(100% + 1.25em);
-  height: 18.75em;
+#index-school img {
+  width: 100%;
+  height: auto;
   object-fit: cover;
   padding: 1.25em;
-  margin-left: -1.25em;
 }
 
-/* styling for the h2's to be bold and underlined */
-#index-school h2 {
-  font-weight: bold;
-  text-decoration: underline;
-}
-
+#index-school h2,
 #index-aboutme h2 {
   font-weight: bold;
   text-decoration: underline;
@@ -104,14 +83,42 @@ ul.custom-list li {
   border-radius: 2.5em;
 }
 
-#index-first-column { /* added float */
-  float: center;
+#index-first-column,
+#index-second-column {
   width: 100%;
 }
 
-#index-second-column { /* added float */
-  float: center;
-  width: 100%;
+/* MEDIA QUERIES */
+@media (min-width: 40em) {
+  /* smaller screens */
+  #index-school img,
+  #index-aboutme img {
+    height: 18.75em;
+  }
+  
+  #index-first-column,
+  #index-second-column {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media (min-width: 64em) {
+  /* big screens */
+  #index-school img,
+  #index-aboutme img {
+    height: 22.5em;
+  }
+  
+  #index-first-column {
+    float: none;
+    width: 100%;
+  }
+  
+  #index-second-column {
+    float: none;
+    width: 100%;
+  }
 }
 
 
