@@ -12,3 +12,19 @@
   margin: 30px auto;
 }
 
+#map h1 {
+  font-size: 1.5em;
+  color: #000000;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.info-text {
+  font-size: 1.2em;
+  color: #000000;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+}
+
