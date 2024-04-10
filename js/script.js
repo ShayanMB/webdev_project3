@@ -58,5 +58,8 @@ function toggleMarkerVisibility() {
     }
 }
 
+function panToLocation() {
+    myMap.panTo(marker.getPosition());
+}
 
 google.maps.event.addDomListener(window, 'load', init);
