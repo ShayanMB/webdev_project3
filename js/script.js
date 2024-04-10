@@ -49,6 +49,14 @@ function toggleMarkerBounce() {
     }
 }
 
+function toggleMarkerVisibility() {
+    if (marker.getVisible()) {
+        marker.setVisible(false);
+    } else {
+        marker.setVisible(true);
+        marker.setAnimation(google.maps.Animation.BOUNCE);
+    }
+}
 
 
 google.maps.event.addDomListener(window, 'load', init);
