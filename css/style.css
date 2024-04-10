@@ -167,6 +167,35 @@ h1, h2, h3, h4, h5, h6 {
   width: 50%;
 }
 
+#music-picture-slider {
+  float: center;
+  clear: both;
+  padding: 1.25em;
+  margin-top: 1.25em;
+}
+
+#picture-slider {
+  padding: 1.25em;
+  width: 100%;
+}
+
+.slider-container {
+  float: center;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.slider-container img {
+  max-width: 100%;
+  max-height: 200px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  border-radius: 0.625em;
+  margin-right: 1em;
+}
+
+
 /* RESUME PAGE STYLING BASED ON THE SECTIONS */
 
 #resume-education li {
