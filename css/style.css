@@ -168,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #music-picture-slider {
-  float: center;
+  float: none;
   clear: both;
   padding: 1.25em;
   margin-top: 1.25em;
@@ -180,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .slider-container {
-  float: center;
+  float: none;
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
