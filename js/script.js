@@ -1,5 +1,5 @@
-var myMap; // Global variable to hold the map object
-var marker; // Global variable to hold the marker object
+var myMap;
+var marker;
 
 function init() {
     var el = document.getElementById('map');
@@ -28,7 +28,6 @@ function init() {
         content: contentString
     });
 
-    // Add event listener for when the marker is hovered over
     google.maps.event.addListener(marker, 'mouseover', function() {
         infowindow.open(myMap, marker);
     });
@@ -41,5 +40,15 @@ function toggleMapType() {
         myMap.setMapTypeId(google.maps.MapTypeId.SATELLITE);
     }
 }
+
+function toggleMarkerBounce() {
+    if (marker.getAnimation() !== null) {
+        marker.setAnimation(null);
+    } else {
+        marker.setAnimation(google.maps.Animation.BOUNCE);
+    }
+}
+
+
 
 google.maps.event.addDomListener(window, 'load', init);
